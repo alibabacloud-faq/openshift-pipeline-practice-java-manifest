@@ -6,6 +6,16 @@ items:
     labels:
       app: sample-spring-boot
       template: sample-spring-boot
+    name: argocd-pipeline-practice-java-2
+  stringData:
+    database-password: password
+    database-user: freelancer
+- apiVersion: v1
+  kind: Secret
+  metadata:
+    labels:
+      app: sample-spring-boot
+      template: sample-spring-boot
     name: argocd-pipeline-practice-java
   stringData:
     database-password: password
